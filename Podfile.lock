@@ -1,0 +1,55 @@
+PODS:
+  - MaterialComponents/AnimationTiming (109.0.0)
+  - MaterialComponents/Availability (109.0.0)
+  - MaterialComponents/Cards (109.0.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Icons/ic_check_circle
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Shapes
+  - MaterialComponents/Elevation (109.0.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Ink (109.0.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/private/Color (109.0.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/Icons/Base (109.0.0)
+  - MaterialComponents/private/Icons/ic_check_circle (109.0.0):
+    - MaterialComponents/private/Icons/Base
+  - MaterialComponents/private/Math (109.0.0)
+  - MaterialComponents/Ripple (109.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/ShadowElevations (109.0.0)
+  - MaterialComponents/ShadowLayer (109.0.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Shapes (109.0.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - MaterialComponents/Cards
+  - SnapKit (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - MaterialComponents
+    - SnapKit
+
+SPEC CHECKSUMS:
+  MaterialComponents: efea7f96438838624ea3a4fcc881bfd6b3b0bb7b
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: a346f20a677391a8dd285662dc71c3ef8634f871
+
+COCOAPODS: 1.9.1

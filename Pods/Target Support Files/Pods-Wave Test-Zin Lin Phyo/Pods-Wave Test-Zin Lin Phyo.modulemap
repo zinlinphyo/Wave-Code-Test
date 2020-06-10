@@ -1,0 +1,6 @@
+framework module Pods_Wave_Test_Zin_Lin_Phyo {
+  umbrella header "Pods-Wave Test-Zin Lin Phyo-umbrella.h"
+
+  export *
+  module * { export * }
+}

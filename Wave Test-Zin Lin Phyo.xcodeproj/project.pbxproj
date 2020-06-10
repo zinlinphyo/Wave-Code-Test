@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11244DAD2491211E002190B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11244DAC2491211E002190B1 /* AppDelegate.swift */; };
+		11244DAF2491211E002190B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11244DAE2491211E002190B1 /* SceneDelegate.swift */; };
+		11244DB42491211E002190B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11244DB22491211E002190B1 /* Main.storyboard */; };
+		11244DB624912127002190B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11244DB524912127002190B1 /* Assets.xcassets */; };
+		11244DB924912127002190B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11244DB724912127002190B1 /* LaunchScreen.storyboard */; };
+		11244DC12491248D002190B1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11244DC02491248D002190B1 /* HomeViewController.swift */; };
+		11244DC624912D44002190B1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11244DC524912D44002190B1 /* UIColor+Extension.swift */; };
+		11244DC824912F27002190B1 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11244DC724912F27002190B1 /* UIFont+Extension.swift */; };
+		8C47359C813493DAE9E11258 /* Pods_Wave_Test_Zin_Lin_Phyo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4620CC9D9C908725EDB6DB55 /* Pods_Wave_Test_Zin_Lin_Phyo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11244DA92491211E002190B1 /* Wave Test - Zin Lin Phyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wave Test - Zin Lin Phyo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11244DAC2491211E002190B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11244DAE2491211E002190B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		11244DB32491211E002190B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11244DB524912127002190B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11244DB824912127002190B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11244DBA24912127002190B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11244DC02491248D002190B1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		11244DC32491257D002190B1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		11244DC524912D44002190B1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		11244DC724912F27002190B1 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		4620CC9D9C908725EDB6DB55 /* Pods_Wave_Test_Zin_Lin_Phyo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wave_Test_Zin_Lin_Phyo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		759B3247C623EF780C75477D /* Pods-Wave Test-Zin Lin Phyo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wave Test-Zin Lin Phyo.release.xcconfig"; path = "Target Support Files/Pods-Wave Test-Zin Lin Phyo/Pods-Wave Test-Zin Lin Phyo.release.xcconfig"; sourceTree = "<group>"; };
+		C8774C7A6B7925FC7FB724A5 /* Pods-Wave Test-Zin Lin Phyo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wave Test-Zin Lin Phyo.debug.xcconfig"; path = "Target Support Files/Pods-Wave Test-Zin Lin Phyo/Pods-Wave Test-Zin Lin Phyo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11244DA62491211E002190B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C47359C813493DAE9E11258 /* Pods_Wave_Test_Zin_Lin_Phyo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11244DA02491211E002190B1 = {
+			isa = PBXGroup;
+			children = (
+				11244DAB2491211E002190B1 /* Wave Test-Zin Lin Phyo */,
+				11244DAA2491211E002190B1 /* Products */,
+				6761E62662B6DC79B813F0FA /* Pods */,
+				ED4D27E4D608C5EF3E92C04D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11244DAA2491211E002190B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11244DA92491211E002190B1 /* Wave Test - Zin Lin Phyo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11244DAB2491211E002190B1 /* Wave Test-Zin Lin Phyo */ = {
+			isa = PBXGroup;
+			children = (
+				11244DAC2491211E002190B1 /* AppDelegate.swift */,
+				11244DAE2491211E002190B1 /* SceneDelegate.swift */,
+				11244DB22491211E002190B1 /* Main.storyboard */,
+				11244DB524912127002190B1 /* Assets.xcassets */,
+				11244DB724912127002190B1 /* LaunchScreen.storyboard */,
+				11244DBA24912127002190B1 /* Info.plist */,
+				11244DC2249124DE002190B1 /* ViewController */,
+				11244DC424912D27002190B1 /* Utils */,
+				11244DC32491257D002190B1 /* README.md */,
+			);
+			path = "Wave Test-Zin Lin Phyo";
+			sourceTree = "<group>";
+		};
+		11244DC2249124DE002190B1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				11244DC02491248D002190B1 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		11244DC424912D27002190B1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				11244DC524912D44002190B1 /* UIColor+Extension.swift */,
+				11244DC724912F27002190B1 /* UIFont+Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6761E62662B6DC79B813F0FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8774C7A6B7925FC7FB724A5 /* Pods-Wave Test-Zin Lin Phyo.debug.xcconfig */,
+				759B3247C623EF780C75477D /* Pods-Wave Test-Zin Lin Phyo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ED4D27E4D608C5EF3E92C04D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4620CC9D9C908725EDB6DB55 /* Pods_Wave_Test_Zin_Lin_Phyo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11244DA82491211E002190B1 /* Wave Test-Zin Lin Phyo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11244DBD24912127002190B1 /* Build configuration list for PBXNativeTarget "Wave Test-Zin Lin Phyo" */;
+			buildPhases = (
+				63EA376E8B6959B378C7BFB4 /* [CP] Check Pods Manifest.lock */,
+				11244DA52491211E002190B1 /* Sources */,
+				11244DA62491211E002190B1 /* Frameworks */,
+				11244DA72491211E002190B1 /* Resources */,
+				B5447CA80D70AB7DC9AC3A0A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wave Test-Zin Lin Phyo";
+			productName = "Wave Test-Zin Lin Phyo";
+			productReference = 11244DA92491211E002190B1 /* Wave Test - Zin Lin Phyo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11244DA12491211E002190B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Zin Lin Phyo";
+				TargetAttributes = {
+					11244DA82491211E002190B1 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 11244DA42491211E002190B1 /* Build configuration list for PBXProject "Wave Test-Zin Lin Phyo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11244DA02491211E002190B1;
+			productRefGroup = 11244DAA2491211E002190B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11244DA82491211E002190B1 /* Wave Test-Zin Lin Phyo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11244DA72491211E002190B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11244DB924912127002190B1 /* LaunchScreen.storyboard in Resources */,
+				11244DB624912127002190B1 /* Assets.xcassets in Resources */,
+				11244DB42491211E002190B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63EA376E8B6959B378C7BFB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wave Test-Zin Lin Phyo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5447CA80D70AB7DC9AC3A0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wave Test-Zin Lin Phyo/Pods-Wave Test-Zin Lin Phyo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wave Test-Zin Lin Phyo/Pods-Wave Test-Zin Lin Phyo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wave Test-Zin Lin Phyo/Pods-Wave Test-Zin Lin Phyo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11244DA52491211E002190B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11244DAD2491211E002190B1 /* AppDelegate.swift in Sources */,
+				11244DAF2491211E002190B1 /* SceneDelegate.swift in Sources */,
+				11244DC12491248D002190B1 /* HomeViewController.swift in Sources */,
+				11244DC824912F27002190B1 /* UIFont+Extension.swift in Sources */,
+				11244DC624912D44002190B1 /* UIColor+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		11244DB22491211E002190B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11244DB32491211E002190B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11244DB724912127002190B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11244DB824912127002190B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11244DBB24912127002190B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11244DBC24912127002190B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11244DBE24912127002190B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8774C7A6B7925FC7FB724A5 /* Pods-Wave Test-Zin Lin Phyo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wave Test-Zin Lin Phyo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.zinlinphyo.ios.wave-test";
+				PRODUCT_NAME = "Wave Test - Zin Lin Phyo";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11244DBF24912127002190B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 759B3247C623EF780C75477D /* Pods-Wave Test-Zin Lin Phyo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wave Test-Zin Lin Phyo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.zinlinphyo.ios.wave-test";
+				PRODUCT_NAME = "Wave Test - Zin Lin Phyo";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11244DA42491211E002190B1 /* Build configuration list for PBXProject "Wave Test-Zin Lin Phyo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11244DBB24912127002190B1 /* Debug */,
+				11244DBC24912127002190B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11244DBD24912127002190B1 /* Build configuration list for PBXNativeTarget "Wave Test-Zin Lin Phyo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11244DBE24912127002190B1 /* Debug */,
+				11244DBF24912127002190B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11244DA12491211E002190B1 /* Project object */;
+}
