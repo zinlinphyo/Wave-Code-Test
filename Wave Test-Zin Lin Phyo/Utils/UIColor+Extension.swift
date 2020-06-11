@@ -12,7 +12,11 @@ import UIKit
 extension UIColor {
     
     public class var primaryYellow: UIColor {
-        return UIColor(named: "Primary-Yellow")!
+        return UIColor(named: "Color-Primary-Yellow")!
+    }
+    
+    public class var bgGray: UIColor {
+        return UIColor(named: "Color-Bg-Gray")!
     }
     
 }

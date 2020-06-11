@@ -22,12 +22,17 @@ class HomeViewController: UIViewController {
     //MARK: - UI Rendering
     private func setupUI() {
         
+        view.backgroundColor = .bgGray
+        
         view.addSubview(headerView)
         headerView.addSubview(userInfoView)
+        headerView.addSubview(ivHeaderLogo)
         userInfoView.addSubview(ivUserProfile)
         userInfoView.addSubview(lblUserName)
         userInfoView.addSubview(lblAmount)
         userInfoView.addSubview(ivShowAmount)
+        
+        view.addSubview(tableView)
         
         setConstraints()
     }
@@ -36,11 +41,17 @@ class HomeViewController: UIViewController {
         
         headerView.snp.makeConstraints { (make) in
             make.top.left.right.equalToSuperview()
-            make.height.equalToSuperview().multipliedBy(0.2)
+            make.height.equalToSuperview().multipliedBy(0.3)
+        }
+        
+        ivHeaderLogo.snp.makeConstraints { (make) in
+            make.top.equalTo(view.snp.topMargin)
+            make.centerX.equalToSuperview()
+            make.height.equalTo(56)
         }
         
         userInfoView.snp.makeConstraints { (make) in
-            make.top.equalTo(view.snp.topMargin)
+            make.top.equalTo(ivHeaderLogo.snp.bottom)
             make.left.equalToSuperview().offset(16)
             make.right.equalToSuperview().offset(-16)
             make.bottom.equalTo(ivUserProfile)
@@ -68,6 +79,11 @@ class HomeViewController: UIViewController {
             make.height.equalTo(24)
         }
         
+        tableView.snp.makeConstraints { (make) in
+            make.top.equalTo(userInfoView.snp.bottom).offset(16)
+            make.left.right.bottom.equalToSuperview().offset(0)
+        }
+        
     }
     
     //MARK: - View Components
@@ -76,6 +92,13 @@ class HomeViewController: UIViewController {
         view.backgroundColor = .primaryYellow
         
         return view
+    }()
+    
+    lazy var ivHeaderLogo: UIImageView = {
+        let imageView = UIImageView(image: UIImage(named: "WavePay-horizontal"))
+        imageView.contentMode = .scaleAspectFit
+        
+        return imageView
     }()
     
     lazy var userInfoView: UIView = {
@@ -116,4 +139,62 @@ class HomeViewController: UIViewController {
         
         return imageView
     }()
+    
+    lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.separatorStyle = .none
+        tableView.allowsSelection = false
+        tableView.register(HomeMoneyActionTableViewCell.self, forCellReuseIdentifier: "HomeMoneyActionTableViewCell")
+        tableView.register(HomeServicesAndProductsTableViewCell.self, forCellReuseIdentifier: "HomeServicesAndProductsTableViewCell")
+        tableView.backgroundColor = .clear
+        return tableView
+    }()
+}
+
+extension HomeViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.section {
+            case 0: return 130
+            case 1: return 260
+            default: return 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        switch indexPath.section {
+        case 0:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "HomeMoneyActionTableViewCell", for: indexPath) as? HomeMoneyActionTableViewCell {
+                cell.backgroundColor = .clear
+                return cell
+            }
+            
+        case 1:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "HomeServicesAndProductsTableViewCell", for: indexPath) as? HomeServicesAndProductsTableViewCell {
+                cell.backgroundColor = .clear
+                return cell
+            }
+            
+        default:
+            return UITableViewCell()
+        }
+        
+        return UITableViewCell()
+    }
+    
+    
+}
+
+extension HomeViewController: UITableViewDelegate {
+    
 }
