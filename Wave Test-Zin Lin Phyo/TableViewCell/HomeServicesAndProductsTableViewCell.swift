@@ -36,6 +36,18 @@ class HomeServicesAndProductsTableViewCell: UITableViewCell {
         bgView.addSubview(gamesView)
         gamesView.addSubview(ivGames)
         gamesView.addSubview(lblGames)
+        
+        bgView.addSubview(eventTicketView)
+        eventTicketView.addSubview(ivEventTicket)
+        eventTicketView.addSubview(lblEventTicket)
+        
+        bgView.addSubview(donationsView)
+        donationsView.addSubview(ivDonations)
+        donationsView.addSubview(lblDonations)
+        
+        bgView.addSubview(moreView)
+        moreView.addSubview(ivMore)
+        moreView.addSubview(lblMore)
     }
     
     override func layoutSubviews() {
@@ -95,6 +107,60 @@ class HomeServicesAndProductsTableViewCell: UITableViewCell {
         
         lblGames.snp.makeConstraints { (make) in
             make.top.equalTo(ivGames.snp.bottom).offset(8)
+            make.centerX.equalToSuperview()
+        }
+        
+        eventTicketView.snp.makeConstraints { (make) in
+            make.top.equalTo(topupView.snp.bottom)
+            make.left.equalToSuperview()
+            make.width.equalToSuperview().multipliedBy(0.333)
+            make.height.equalToSuperview().multipliedBy(0.5)
+        }
+        
+        ivEventTicket.snp.makeConstraints { (make) in
+            make.width.height.equalTo(56)
+            make.centerX.equalToSuperview().offset(0)
+            make.centerY.equalToSuperview().offset(-16)
+        }
+        
+        lblEventTicket.snp.makeConstraints { (make) in
+            make.top.equalTo(ivEventTicket.snp.bottom).offset(8)
+            make.centerX.equalToSuperview()
+        }
+        
+        donationsView.snp.makeConstraints { (make) in
+            make.top.equalTo(topupView.snp.bottom)
+            make.centerX.equalToSuperview()
+            make.width.equalToSuperview().multipliedBy(0.333)
+            make.height.equalToSuperview().multipliedBy(0.5)
+        }
+        
+        ivDonations.snp.makeConstraints { (make) in
+            make.width.height.equalTo(56)
+            make.centerX.equalToSuperview().offset(0)
+            make.centerY.equalToSuperview().offset(-16)
+        }
+        
+        lblDonations.snp.makeConstraints { (make) in
+            make.top.equalTo(ivDonations.snp.bottom).offset(8)
+            make.centerX.equalToSuperview()
+        }
+        
+        moreView.snp.makeConstraints { (make) in
+            make.top.equalTo(topupView.snp.bottom)
+            make.right.equalToSuperview()
+            make.width.equalToSuperview().multipliedBy(0.333)
+            make.height.equalToSuperview().multipliedBy(0.5)
+        }
+        
+        ivMore.snp.makeConstraints { (make) in
+            make.width.height.equalTo(56)
+            make.centerX.equalToSuperview().offset(0)
+            make.centerY.equalToSuperview().offset(-16)
+        }
+        
+        lblMore.snp.makeConstraints { (make) in
+            make.top.equalTo(ivMore.snp.bottom).offset(8)
             make.centerX.equalToSuperview()
         }
     }
@@ -169,6 +235,72 @@ class HomeServicesAndProductsTableViewCell: UITableViewCell {
     lazy var lblGames: UILabel = {
         let label = UILabel()
         label.text = "Games"
+        label.font = .regularMedium
+        label.textColor = .black
+        
+        return label
+    }()
+    
+    let eventTicketView: UIView = {
+        let view = UIView()
+        
+        return view
+    }()
+    
+    lazy var ivEventTicket: UIImageView = {
+        let imageView = UIImageView(image: UIImage(named: "tickets"))
+        imageView.contentMode = .scaleAspectFit
+        
+        return imageView
+    }()
+    
+    lazy var lblEventTicket: UILabel = {
+        let label = UILabel()
+        label.text = "Event Tickets"
+        label.font = .regularMedium
+        label.textColor = .black
+        
+        return label
+    }()
+    
+    let donationsView: UIView = {
+        let view = UIView()
+        
+        return view
+    }()
+    
+    lazy var ivDonations: UIImageView = {
+        let imageView = UIImageView(image: UIImage(named: "donation"))
+        imageView.contentMode = .scaleAspectFit
+        
+        return imageView
+    }()
+    
+    lazy var lblDonations: UILabel = {
+        let label = UILabel()
+        label.text = "Donations"
+        label.font = .regularMedium
+        label.textColor = .black
+        
+        return label
+    }()
+    
+    let moreView: UIView = {
+        let view = UIView()
+        
+        return view
+    }()
+    
+    lazy var ivMore: UIImageView = {
+        let imageView = UIImageView(image: UIImage(named: "more"))
+        imageView.contentMode = .scaleAspectFit
+        
+        return imageView
+    }()
+    
+    lazy var lblMore: UILabel = {
+        let label = UILabel()
+        label.text = "More"
         label.font = .regularMedium
         label.textColor = .black
         

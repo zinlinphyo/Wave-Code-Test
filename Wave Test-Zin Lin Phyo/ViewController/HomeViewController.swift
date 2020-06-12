@@ -148,6 +148,7 @@ class HomeViewController: UIViewController {
         tableView.allowsSelection = false
         tableView.register(HomeMoneyActionTableViewCell.self, forCellReuseIdentifier: "HomeMoneyActionTableViewCell")
         tableView.register(HomeServicesAndProductsTableViewCell.self, forCellReuseIdentifier: "HomeServicesAndProductsTableViewCell")
+        tableView.register(HomePromotionsTableViewCell.self, forCellReuseIdentifier: "HomePromotionsTableViewCell")
         tableView.backgroundColor = .clear
         return tableView
     }()
@@ -166,6 +167,7 @@ extension HomeViewController: UITableViewDataSource {
         switch indexPath.section {
             case 0: return 130
             case 1: return 260
+            case 2: return 250
             default: return 0
         }
     }
@@ -181,6 +183,12 @@ extension HomeViewController: UITableViewDataSource {
             
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "HomeServicesAndProductsTableViewCell", for: indexPath) as? HomeServicesAndProductsTableViewCell {
+                cell.backgroundColor = .clear
+                return cell
+            }
+            
+        case 2:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "HomePromotionsTableViewCell", for: indexPath) as? HomePromotionsTableViewCell {
                 cell.backgroundColor = .clear
                 return cell
             }
