@@ -12,11 +12,41 @@ import MaterialComponents.MaterialCards
 
 class HomeViewController: UIViewController {
     
+    private var isShowAmount = false
+    
     //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupUI()
+        setListener()
+    }
+    
+    private func setListener() {
+        let showAmountTap = UITapGestureRecognizer(target: self, action: #selector(self.didTapShowAmount))
+        ivShowAmount.isUserInteractionEnabled = true
+        ivShowAmount.addGestureRecognizer(showAmountTap)
+    }
+    
+    private func showAmount() {
+        ivShowAmount.image = UIImage(named: "eye_on")
+        lblAmount.text = "12000 Kyat"
+        isShowAmount.toggle()
+    }
+    
+    private func hideAmount() {
+        ivShowAmount.image = UIImage(named: "eye_off")
+        lblAmount.text = "***** Kyat"
+        isShowAmount.toggle()
+    }
+    
+    // MARK: - Action Listener
+    @objc func didTapShowAmount(_ sender: Any){
+        if isShowAmount {
+            hideAmount()
+        } else {
+            showAmount()
+        }
     }
     
     //MARK: - UI Rendering
