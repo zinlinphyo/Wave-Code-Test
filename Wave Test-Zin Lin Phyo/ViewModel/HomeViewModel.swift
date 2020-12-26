@@ -12,7 +12,7 @@ struct HomeViewModel {
     
     private(set) var isShowAmount = false
     private(set) var userName = UserModel.shared().user.name
-    private(set) var amount = WalletModel.shared().wallet.amount
+    private var amount = WalletModel.shared().wallet.amount
     
     init() {
         
