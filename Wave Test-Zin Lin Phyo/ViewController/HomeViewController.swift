@@ -12,7 +12,8 @@ import MaterialComponents.MaterialCards
 
 class HomeViewController: UIViewController {
     
-    private var isShowAmount = false
+    // MARK: - Attributes
+    private var viewModel = HomeViewModel()
     
     //MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -30,90 +31,23 @@ class HomeViewController: UIViewController {
     
     private func showAmount() {
         ivShowAmount.image = UIImage(named: "eye_on")
-        lblAmount.text = "12000 Kyat"
-        isShowAmount.toggle()
+        viewModel.toggleShowAmount()
+        lblAmount.text = viewModel.getAmount()
     }
     
     private func hideAmount() {
         ivShowAmount.image = UIImage(named: "eye_off")
-        lblAmount.text = "***** Kyat"
-        isShowAmount.toggle()
+        viewModel.toggleShowAmount()
+        lblAmount.text = viewModel.getAmount()
     }
     
     // MARK: - Action Listener
     @objc func didTapShowAmount(_ sender: Any){
-        if isShowAmount {
+        if viewModel.isShowAmount {
             hideAmount()
         } else {
             showAmount()
         }
-    }
-    
-    //MARK: - UI Rendering
-    private func setupUI() {
-        
-        view.backgroundColor = .bgGray
-        
-        view.addSubview(headerView)
-        headerView.addSubview(userInfoView)
-        headerView.addSubview(ivHeaderLogo)
-        userInfoView.addSubview(ivUserProfile)
-        userInfoView.addSubview(lblUserName)
-        userInfoView.addSubview(lblAmount)
-        userInfoView.addSubview(ivShowAmount)
-        
-        view.addSubview(tableView)
-        
-        setConstraints()
-    }
-    
-    private func setConstraints() {
-        
-        headerView.snp.makeConstraints { (make) in
-            make.top.left.right.equalToSuperview()
-            make.height.equalToSuperview().multipliedBy(0.3)
-        }
-        
-        ivHeaderLogo.snp.makeConstraints { (make) in
-            make.top.equalTo(view.snp.topMargin)
-            make.centerX.equalToSuperview()
-            make.height.equalTo(56)
-        }
-        
-        userInfoView.snp.makeConstraints { (make) in
-            make.top.equalTo(ivHeaderLogo.snp.bottom)
-            make.left.equalToSuperview().offset(16)
-            make.right.equalToSuperview().offset(-16)
-            make.bottom.equalTo(ivUserProfile)
-        }
-        
-        ivUserProfile.snp.makeConstraints { (make) in
-            make.top.left.equalToSuperview().offset(8)
-            make.width.height.equalTo(64)
-        }
-        
-        lblUserName.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(16)
-            make.left.equalTo(ivUserProfile.snp.right).offset(16)
-        }
-        
-        lblAmount.snp.makeConstraints { (make) in
-            make.top.equalTo(lblUserName.snp.bottom).offset(8)
-            make.left.equalTo(ivUserProfile.snp.right).offset(16)
-        }
-        
-        ivShowAmount.snp.makeConstraints { (make) in
-            make.top.equalTo(lblAmount)
-            make.left.equalTo(lblAmount.snp.right).offset(8)
-            make.width.equalTo(32)
-            make.height.equalTo(24)
-        }
-        
-        tableView.snp.makeConstraints { (make) in
-            make.top.equalTo(userInfoView.snp.bottom).offset(16)
-            make.left.right.bottom.equalToSuperview().offset(0)
-        }
-        
     }
     
     //MARK: - View Components
@@ -147,7 +81,7 @@ class HomeViewController: UIViewController {
     
     lazy var lblUserName: UILabel = {
         let label = UILabel()
-        label.text = "Zin Lin Phyo"
+        label.text = viewModel.userName
         label.font = .boldMedium
         label.textColor = .black
         
@@ -156,7 +90,7 @@ class HomeViewController: UIViewController {
     
     lazy var lblAmount: UILabel = {
         let label = UILabel()
-        label.text = "***** Kyat"
+        label.text = viewModel.getAmount()
         label.font = .boldMedium
         label.textColor = .black
         
@@ -234,5 +168,76 @@ extension HomeViewController: UITableViewDataSource {
 }
 
 extension HomeViewController: UITableViewDelegate {
+    
+}
+
+extension HomeViewController {
+    
+    //MARK: - UI Rendering
+    private func setupUI() {
+        
+        view.backgroundColor = .bgGray
+        
+        view.addSubview(headerView)
+        headerView.addSubview(userInfoView)
+        headerView.addSubview(ivHeaderLogo)
+        userInfoView.addSubview(ivUserProfile)
+        userInfoView.addSubview(lblUserName)
+        userInfoView.addSubview(lblAmount)
+        userInfoView.addSubview(ivShowAmount)
+        
+        view.addSubview(tableView)
+        
+        setConstraints()
+    }
+    
+    private func setConstraints() {
+        
+        headerView.snp.makeConstraints { (make) in
+            make.top.left.right.equalToSuperview()
+            make.height.equalToSuperview().multipliedBy(0.3)
+        }
+        
+        ivHeaderLogo.snp.makeConstraints { (make) in
+            make.top.equalTo(view.snp.topMargin)
+            make.centerX.equalToSuperview()
+            make.height.equalTo(56)
+        }
+        
+        userInfoView.snp.makeConstraints { (make) in
+            make.top.equalTo(ivHeaderLogo.snp.bottom)
+            make.left.equalToSuperview().offset(16)
+            make.right.equalToSuperview().offset(-16)
+            make.bottom.equalTo(ivUserProfile)
+        }
+        
+        ivUserProfile.snp.makeConstraints { (make) in
+            make.top.left.equalToSuperview().offset(8)
+            make.width.height.equalTo(64)
+        }
+        
+        lblUserName.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(16)
+            make.left.equalTo(ivUserProfile.snp.right).offset(16)
+        }
+        
+        lblAmount.snp.makeConstraints { (make) in
+            make.top.equalTo(lblUserName.snp.bottom).offset(8)
+            make.left.equalTo(ivUserProfile.snp.right).offset(16)
+        }
+        
+        ivShowAmount.snp.makeConstraints { (make) in
+            make.top.equalTo(lblAmount)
+            make.left.equalTo(lblAmount.snp.right).offset(8)
+            make.width.equalTo(32)
+            make.height.equalTo(24)
+        }
+        
+        tableView.snp.makeConstraints { (make) in
+            make.top.equalTo(userInfoView.snp.bottom).offset(16)
+            make.left.right.bottom.equalToSuperview().offset(0)
+        }
+        
+    }
     
 }

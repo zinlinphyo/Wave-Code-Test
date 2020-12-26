@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1104DFE925971B0C000C41FF /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104DFE825971B0C000C41FF /* UserModel.swift */; };
+		1104DFEC25971E63000C41FF /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1104DFEB25971E63000C41FF /* WalletModel.swift */; };
 		11244DAD2491211E002190B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11244DAC2491211E002190B1 /* AppDelegate.swift */; };
 		11244DAF2491211E002190B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11244DAE2491211E002190B1 /* SceneDelegate.swift */; };
 		11244DB42491211E002190B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11244DB22491211E002190B1 /* Main.storyboard */; };
@@ -18,11 +20,14 @@
 		11244DCB24929BF6002190B1 /* HomeMoneyActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11244DCA24929BF6002190B1 /* HomeMoneyActionTableViewCell.swift */; };
 		11244DCD2492A835002190B1 /* HomeServicesAndProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11244DCC2492A835002190B1 /* HomeServicesAndProductsTableViewCell.swift */; };
 		11244DCF2492B27E002190B1 /* HomePromotionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11244DCE2492B27D002190B1 /* HomePromotionsTableViewCell.swift */; };
+		118C5B0F25959DE7006375E7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118C5B0E25959DE7006375E7 /* HomeViewModel.swift */; };
 		11CCDA5A2493296500FB8C9D /* PromotionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CCDA592493296500FB8C9D /* PromotionCollectionViewCell.swift */; };
 		8C47359C813493DAE9E11258 /* Pods_Wave_Test_Zin_Lin_Phyo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4620CC9D9C908725EDB6DB55 /* Pods_Wave_Test_Zin_Lin_Phyo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1104DFE825971B0C000C41FF /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		1104DFEB25971E63000C41FF /* WalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
 		11244DA92491211E002190B1 /* Wave Test - Zin Lin Phyo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wave Test - Zin Lin Phyo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11244DAC2491211E002190B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11244DAE2491211E002190B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +42,7 @@
 		11244DCA24929BF6002190B1 /* HomeMoneyActionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMoneyActionTableViewCell.swift; sourceTree = "<group>"; };
 		11244DCC2492A835002190B1 /* HomeServicesAndProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServicesAndProductsTableViewCell.swift; sourceTree = "<group>"; };
 		11244DCE2492B27D002190B1 /* HomePromotionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePromotionsTableViewCell.swift; sourceTree = "<group>"; };
+		118C5B0E25959DE7006375E7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		11CCDA592493296500FB8C9D /* PromotionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionCollectionViewCell.swift; sourceTree = "<group>"; };
 		4620CC9D9C908725EDB6DB55 /* Pods_Wave_Test_Zin_Lin_Phyo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wave_Test_Zin_Lin_Phyo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		759B3247C623EF780C75477D /* Pods-Wave Test-Zin Lin Phyo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wave Test-Zin Lin Phyo.release.xcconfig"; path = "Target Support Files/Pods-Wave Test-Zin Lin Phyo/Pods-Wave Test-Zin Lin Phyo.release.xcconfig"; sourceTree = "<group>"; };
@@ -55,6 +61,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1104DFE625971AE1000C41FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1104DFE825971B0C000C41FF /* UserModel.swift */,
+				1104DFEB25971E63000C41FF /* WalletModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1104DFE725971AF5000C41FF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1104DFE625971AE1000C41FF /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		11244DA02491211E002190B1 = {
 			isa = PBXGroup;
 			children = (
@@ -83,9 +106,11 @@
 				11244DB724912127002190B1 /* LaunchScreen.storyboard */,
 				11244DBA24912127002190B1 /* Info.plist */,
 				11244DC2249124DE002190B1 /* ViewController */,
+				118C5B0D25959DBB006375E7 /* ViewModel */,
 				11244DC924929B50002190B1 /* TableViewCell */,
 				11CCDA582493293900FB8C9D /* CollectionViewCell */,
 				11244DC424912D27002190B1 /* Utils */,
+				1104DFE725971AF5000C41FF /* Data */,
 				11244DC32491257D002190B1 /* README.md */,
 			);
 			path = "Wave Test-Zin Lin Phyo";
@@ -116,6 +141,14 @@
 				11244DCE2492B27D002190B1 /* HomePromotionsTableViewCell.swift */,
 			);
 			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		118C5B0D25959DBB006375E7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				118C5B0E25959DE7006375E7 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		11CCDA582493293900FB8C9D /* CollectionViewCell */ = {
@@ -261,12 +294,15 @@
 				11244DAD2491211E002190B1 /* AppDelegate.swift in Sources */,
 				11244DCB24929BF6002190B1 /* HomeMoneyActionTableViewCell.swift in Sources */,
 				11244DAF2491211E002190B1 /* SceneDelegate.swift in Sources */,
+				118C5B0F25959DE7006375E7 /* HomeViewModel.swift in Sources */,
 				11244DC12491248D002190B1 /* HomeViewController.swift in Sources */,
 				11244DCD2492A835002190B1 /* HomeServicesAndProductsTableViewCell.swift in Sources */,
 				11244DC824912F27002190B1 /* UIFont+Extension.swift in Sources */,
 				11244DCF2492B27E002190B1 /* HomePromotionsTableViewCell.swift in Sources */,
 				11CCDA5A2493296500FB8C9D /* PromotionCollectionViewCell.swift in Sources */,
 				11244DC624912D44002190B1 /* UIColor+Extension.swift in Sources */,
+				1104DFEC25971E63000C41FF /* WalletModel.swift in Sources */,
+				1104DFE925971B0C000C41FF /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48LBJ9FZ5F;
 				INFOPLIST_FILE = "Wave Test-Zin Lin Phyo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -430,6 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48LBJ9FZ5F;
 				INFOPLIST_FILE = "Wave Test-Zin Lin Phyo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
